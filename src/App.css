@@ -2,7 +2,9 @@
 @import "./styles/variables.css";
 
 .app {
+  width: 45%;
   height: 100vh;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
