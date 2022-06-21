@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Input } from "../../component";
 import styles from "./Home.module.css";
 
-export const Welcome = () => {
+export const Home = () => {
   return (
     <div>
       <div className="flex-col justify-center items-center">

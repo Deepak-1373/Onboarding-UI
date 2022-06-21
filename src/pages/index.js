@@ -1,1 +1,1 @@
-export { Welcome } from "./Welcome/Welcome";
+export { Home } from "./Home/Home";
