@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Input } from "../../component";
-import styles from "./Welcome.module.css";
+import styles from "./Home.module.css";
 
 export const Welcome = () => {
   return (
