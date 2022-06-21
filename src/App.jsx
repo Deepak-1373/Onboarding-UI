@@ -1,12 +1,12 @@
 import "./App.css";
-import { Button, Input } from "./component";
+import { Welcome } from "./pages";
 
 function App() {
   return (
     <div className="app">
-      <h1>Onboarding-UI</h1>
-      <Input type="text" placeholder="Steve Jobs" />
-      <Button text="Create Workspace" />
+      <Routes>
+        <Route to="/" element={<Welcome />} />
+      </Routes>
     </div>
   );
 }
