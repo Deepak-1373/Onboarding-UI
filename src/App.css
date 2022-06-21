@@ -1,3 +1,10 @@
 @import "./styles/reset.css";
 @import "./styles/variables.css";
-@import "./styles/common.css";
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
