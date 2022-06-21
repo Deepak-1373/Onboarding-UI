@@ -3,7 +3,8 @@
 @import "./styles/common.css";
 
 .app {
-  width: 50%;
+  width: 100%;
+  max-width: 50rem;
   padding: 0.8rem;
   height: 100vh;
   margin: auto;
