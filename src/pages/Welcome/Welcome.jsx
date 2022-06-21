@@ -4,7 +4,7 @@ import { Button, Input } from "../../component";
 export const Welcome = () => {
   return (
     <div>
-      <div>
+      <div className="flex-col justify-center items-center">
         <p>Welcome! First things first...</p>
         <p>You can always change them later</p>
       </div>
