@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Input } from "../../component";
+import { Button, Card, Input } from "../../component";
 import styles from "./WorkSpace.module.css";
 
 export const WorkSpace = () => {
@@ -26,6 +26,11 @@ export const WorkSpace = () => {
         </div>
       </form>
       <Button text="Create Workspace" />
+      <Card
+        iconName="person"
+        title="For myself"
+        subtitle="Write better. Think more clearly. Stay Organized"
+      />
     </div>
   );
 };
