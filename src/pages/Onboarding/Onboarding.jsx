@@ -5,6 +5,7 @@ import styles from "./Onboarding.module.css";
 
 export const Onboarding = () => {
   const [userData] = useOutletContext();
+
   return (
     <div className={`${styles.container} flex-col justify-center items-center`}>
       <span className={`${styles.checkIcon} material-symbols-outlined`}>
