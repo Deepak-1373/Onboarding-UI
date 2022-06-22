@@ -35,12 +35,17 @@ export const WorkSpace = () => {
             <span
               className={`${styles.inputContainer} flex items-center justify-center`}
             >
-              <span className={`${styles.inputURL}`}>www.eden.com/</span>
+              <input
+                value="www.eden.com/"
+                disabled={true}
+                className={`${styles.inputURL}`}
+              />
               <input
                 type="text"
                 className={`${styles.input}`}
                 id="workspace-url"
                 onChange={(e) => setWorkSpaceURL(e.target.value)}
+                placeholder="Example"
               />
             </span>
           </label>
