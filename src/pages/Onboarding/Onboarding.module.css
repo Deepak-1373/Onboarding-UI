@@ -1,0 +1,24 @@
+.checkIcon {
+  padding: 1.2rem;
+  color: var(--white);
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+.title {
+  margin-top: 3.2rem;
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.subTitle {
+  font-size: 1.6rem;
+  margin-top: 1.2rem;
+  color: var(--text-color);
+}
+
+.buttonContainer {
+  width: 80%;
+  margin-top: 3.2rem;
+}
