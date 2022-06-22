@@ -2,10 +2,13 @@
   width: 15rem;
   height: 15rem;
   padding: 1.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid var(--light-gray);
 }
 
 .cardTitle {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: var(--secondary-color);
 }
@@ -13,4 +16,12 @@
 .cardSubTitle {
   font-size: 1.2rem;
   color: var(--text-color);
+}
+
+.cardActive {
+  border: 1px solid var(--primary-color);
+}
+
+.iconActive {
+  color: var(--primary-color);
 }

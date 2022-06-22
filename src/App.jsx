@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Experience, Home, WorkSpace } from "./pages";
+import { Experience, Home, Onboarding, WorkSpace } from "./pages";
 import { Layout } from "./component";
 import "./App.css";
 
@@ -11,6 +11,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/workspace" element={<WorkSpace />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/onboarding" element={<Onboarding />} />
         </Route>
       </Routes>
     </div>

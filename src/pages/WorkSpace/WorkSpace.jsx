@@ -1,8 +1,13 @@
-import React from "react";
-import { Button, Card, Input } from "../../component";
+import React, { useState } from "react";
+import { useOutletContext } from "react-router-dom";
+import { Button, Input } from "../../component";
 import styles from "./WorkSpace.module.css";
 
 export const WorkSpace = () => {
+  const { handleFormSubmitClick } = useOutletContext();
+  const [workspaceName, setWorkSpaceName] = useState("");
+  const [workSpaceURL, setWorkSpaceURL] = useState("");
+
   return (
     <div>
       <div className="flex-col justify-center items-center">
@@ -11,12 +16,18 @@ export const WorkSpace = () => {
           You can always create another workspace later.
         </p>
       </div>
-      <form className={`${styles.form}`}>
+      <form
+        className={`${styles.form}`}
+        onSubmit={(e) =>
+          handleFormSubmitClick(e, workspaceName, workSpaceURL, "/experience")
+        }
+      >
         <Input
           id="workspace-name"
           type="text"
           placeholder="Eden"
           labelText="WorkSpace Name"
+          setInputNameChange={setWorkSpaceName}
         />
         <div className="pb-4 flex-col">
           <label className="text-base" htmlFor="workspace-url">
@@ -29,19 +40,11 @@ export const WorkSpace = () => {
                 type="text"
                 className={`${styles.input}`}
                 id="workspace-url"
+                onChange={(e) => setWorkSpaceURL(e.target.value)}
               />
             </span>
           </label>
         </div>
-
-        {/* 
-        <Input
-          id="workspace-url"
-          type="text"
-          placeholder="www.eden.com"
-          labelText="WorkSpace URL"
-          labelData="(optional)"
-        /> */}
         <Button text="Create Workspace" />
       </form>
     </div>

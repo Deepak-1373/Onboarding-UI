@@ -1,11 +1,12 @@
-import React from "react";
-import { useNavigate, useOutletContext } from "react-router-dom";
+import React, { useState } from "react";
+import { useOutletContext } from "react-router-dom";
 import { Button, Input } from "../../component";
 import styles from "./Home.module.css";
 
 export const Home = () => {
-  const navigate = useNavigate();
-  const [userProgress, handleFormSubmitClick] = useOutletContext();
+  const { handleFormSubmitClick } = useOutletContext();
+  const [firstName, setFirstName] = useState("");
+  const [displayName, setDisplayName] = useState("");
 
   return (
     <div>
@@ -15,20 +16,24 @@ export const Home = () => {
       </div>
       <form
         className={styles.form}
-        onSubmit={(e) => handleFormSubmitClick(e, "/workspace")}
+        onSubmit={(e) =>
+          handleFormSubmitClick(e, firstName, displayName, "/workspace")
+        }
       >
-        <div className="pb-4">
-          <label className="text-base" htmlFor="first-name">
-            First Name
-          </label>
-          <Input id="first-name" type="text" placeholder="Steve Jobs" />
-        </div>
-        <div className="pb-4">
-          <label className="text-base" htmlFor="display-name">
-            Display Name
-          </label>
-          <Input id="display-name" type="text" placeholder="Steve" />
-        </div>
+        <Input
+          id="first-name"
+          type="text"
+          placeholder="Steve Jobs"
+          labelText="First Name"
+          setInputNameChange={setFirstName}
+        />
+        <Input
+          id="display-name"
+          type="text"
+          placeholder="Steve"
+          labelText="Display Name"
+          setInputNameChange={setDisplayName}
+        />
         <Button text="Create Workspace" />
       </form>
     </div>

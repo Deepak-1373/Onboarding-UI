@@ -9,3 +9,9 @@
   height: 100vh;
   margin: auto;
 }
+
+@media screen and (max-width: 48em) {
+  html {
+    font-size: 56%;
+  }
+}
