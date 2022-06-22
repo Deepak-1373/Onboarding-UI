@@ -1,15 +1,22 @@
 import React from "react";
+import { useNavigate, useOutletContext } from "react-router-dom";
 import { Button, Input } from "../../component";
 import styles from "./Home.module.css";
 
 export const Home = () => {
+  const navigate = useNavigate();
+  const [userProgress, handleFormSubmitClick] = useOutletContext();
+
   return (
     <div>
       <div className="flex-col justify-center items-center">
         <p className={styles.title}>Welcome! First things first...</p>
         <p className={styles.subTitle}>You can always change them later</p>
       </div>
-      <form className={styles.form}>
+      <form
+        className={styles.form}
+        onSubmit={(e) => handleFormSubmitClick(e, "/workspace")}
+      >
         <div className="pb-4">
           <label className="text-base" htmlFor="first-name">
             First Name

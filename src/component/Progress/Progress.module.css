@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4.8rem 0;
+  padding: 0 8rem;
+}
+
+.item {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+  border: 1px solid var(--light-gray);
+}
+
+.itemBackground {
+  border: none;
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.separator {
+  height: 2px;
+  width: 100%;
+  min-width: 6rem;
+  display: flex;
+  background-color: var(--light-gray);
+}
+
+.separator div {
+  width: 100%;
+}
+
+.active {
+  background-color: var(--primary-color);
+}

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Input.module.css";
 
 export const Input = ({
@@ -6,12 +5,11 @@ export const Input = ({
   type = "",
   placeholder = "",
   labelText = "",
-  labelData = "",
 }) => {
   return (
     <div className="pb-4">
       <label className="text-base" htmlFor={id}>
-        {labelText} <span>{labelData}</span>
+        {labelText}
         <input
           required
           id={id}
