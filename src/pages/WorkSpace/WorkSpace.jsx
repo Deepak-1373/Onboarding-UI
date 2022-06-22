@@ -18,13 +18,30 @@ export const WorkSpace = () => {
           placeholder="Eden"
           labelText="WorkSpace Name"
         />
+        <div className="pb-4 flex-col">
+          <label className="text-base" htmlFor="workspace-url">
+            Workspace URL <span>(optional)</span>
+            <span
+              className={`${styles.inputContainer} flex items-center justify-center`}
+            >
+              <span className={`${styles.inputURL}`}>www.eden.com/</span>
+              <input
+                type="text"
+                className={`${styles.input}`}
+                id="workspace-url"
+              />
+            </span>
+          </label>
+        </div>
+
+        {/* 
         <Input
           id="workspace-url"
           type="text"
           placeholder="www.eden.com"
           labelText="WorkSpace URL"
           labelData="(optional)"
-        />
+        /> */}
         <Button text="Create Workspace" />
       </form>
     </div>
