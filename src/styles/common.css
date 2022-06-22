@@ -11,6 +11,14 @@
   justify-content: center;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
 .items-center {
   align-items: center;
 }
