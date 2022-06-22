@@ -1,71 +1,67 @@
-# Getting Started with Create React App
+## Preview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://user-images.githubusercontent.com/61752151/175042343-bcf0450a-9789-4d19-8675-d856b133ecc2.mp4
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [About](#about)
+- [Technologies used](#technologies-used)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Screenshots](#screenshots)
+- [Connect with me](#-connect-with-me)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## About
+ - This is an Onboarding UI form having progressive navigation built with ReactJS
+   
+## Technologies used
+- ReactJS
+- React hooks
+- React Router
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
+<ul>
+  <li>Home page (containing a form to add user)</li>
+  <li>Workspace page (containing a form to have user their domain)</li>
+  <li>Experience page</li>
+  <li>Onboarding page</li>
+</ul>
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Clone the repository on your local machine with the command below in your terminal, and cd into the **onboarding-ui** folder
 
-### `npm run build`
+```sh
+https://github.com/Deepak-1373/Onboarding-UI.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+cd onboarding-ui
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Install dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm install
+```
 
-### `npm run eject`
+- Start the Server🚀
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screenshots
+![image](https://user-images.githubusercontent.com/61752151/175041461-49de401a-c6ab-4c80-a8f2-fdff19e07349.png)
+![image](https://user-images.githubusercontent.com/61752151/175041548-5105a181-c1b3-4e0b-8f3e-86596c8b5999.png)
+![image](https://user-images.githubusercontent.com/61752151/175041878-459de1c6-98c6-4ffe-b860-8dfc79ff230e.png)
+![image](https://user-images.githubusercontent.com/61752151/175041985-7ae9f9bd-b280-4ea9-8001-85dc4994ee15.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 👨‍💻 Connect with me 
+<a href="https://twitter.com/dkamat001"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/></a>
+<a href="https://linkedin.com/in/deepak-1373"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Onboarding-UI
